@@ -4,8 +4,7 @@ require 'pry'
 
 my_file = File.open(ARGV.first, 'r')
 
-new_array = []
-
 my_file.each do |line|
+  new_array = line.split
   binding.pry
 end
