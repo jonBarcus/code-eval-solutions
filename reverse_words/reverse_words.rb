@@ -15,8 +15,10 @@ my_file.each do |line|
   while count > 0
     new_array << original_array.pop
     count -= 1
-    binding.pry
   end
 
+  new_string = new_array.join(" ")
+
+  puts new_string.chomp
 
 end
