@@ -2,6 +2,10 @@
 my_file = File.open(ARGV.first, 'r')
 
 my_file.each do |line|
+  if line.length == 1
+    puts ""
+  end
+
   # splitting the line in to an array
   original_array = line.split
 
